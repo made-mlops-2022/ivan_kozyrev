@@ -23,6 +23,5 @@ jobs:
           pip install -r ./requirements.txt
       - name: unittest
         run: |
-          cd ./ml_project
-          python -m unittest ./tests/train_test.py 
-          python -m unittest ./tests/predict_test.py
+          python -m unittest ./ml_project/tests/train_test.py 
+          python -m unittest ./ml_project/tests/predict_test.py
