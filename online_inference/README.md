@@ -25,3 +25,4 @@ python3 -m pytest test_main.py
 ```
 
 ![Alt-текст](https://github.com/made-mlops-2022/ivan_kozyrev/blob/homework2/online_inference/Снимок%20экрана%202022-11-24%20в%2003.11.50.png)
+![Alt-текст](https://github.com/made-mlops-2022/ivan_kozyrev/blob/homework2/online_inference/Снимок%20экрана%202022-11-24%20в%2012.46.59.png)
