@@ -1,0 +1,8 @@
+path_2_raw_data_input: 'data/sourcedata/heart_cleveland_upload.csv'
+path_2_ready_model: "model/destree/finalized_model.sav"
+
+model_name: 'DecisionTreeClassifier'
+test_size: 0.2
+random_state: 42
+max_depth: [4,5,6,7,8]
+grid: True
