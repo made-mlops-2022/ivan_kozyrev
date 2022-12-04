@@ -34,7 +34,7 @@ with DAG(
 
     predict = DockerOperator(
         image='airflow-predict',
-        command='--input-dir /data/raw/{{ ds }} --output-dir /data/predictions/{{ ds }} --model-dir /data/models/',
+        command='--input-dir /data/raw/{{ ds }} --output-dir /data/predictions/{{ ds }} --model-dir data/models/',
         network_mode='bridge',
         task_id='docker-airflow-predict',
         do_xcom_push=False,

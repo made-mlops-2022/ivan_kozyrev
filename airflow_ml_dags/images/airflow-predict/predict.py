@@ -20,7 +20,7 @@ def predict(input_dir: str, output_dir: str, model_dir: str):
     all_subdirs = [os.path.join(model_dir, d) for d in os.listdir(model_dir) if
                    os.path.isdir(os.path.join(model_dir, d))]
     latest_subdir = max(all_subdirs, key=os.path.getmtime)
-    with open(os.path.join(model_dir, latest_subdir, MODEl_FILE), "rb") as f:
+    with open(os.path.join(latest_subdir, MODEl_FILE), "rb") as f:
         model = pickle.load(f)
 
     pred = model.predict(x_train)

@@ -11,10 +11,7 @@ def callable_wait_file_exist(path2file: str):
 
 
 def callback_fail_email(context):
-    "Define custom failure notification behavior"
     dag_run = context.get('dag_run')
-    # task_instances = dag_run.get_task_instances()
-    # print("These task instances failed:", task_instances)
     send_email_smtp(to=default_args['email'], subject=dag_run)
 
 
