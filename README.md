@@ -1,23 +1,21 @@
 # ivan_kozyrev
 
-Для запуска train/predict необходимо находиться в директории ml_project
-
-Для запуска train
+Для запуска airflow
 --------
 ```
-python3 ./src/train.py
+export LOCAL_DATA_DIR=$(pwd)/data
+export FERNET_KEY=$(python3 -c "from cryptography.fernet import Fernet; FERNET_KEY = Fernet.generate_key().decode(); print(FERNET_KEY)")
+docker-compose up --build
 ```
-если изменять предустановленную модель, то 
+стандартный логин и пароль - admin admin соответственно
+
+для почты надо поменять адерс отправителя и черезе export передать пароль
 ```
-python3 ./src/train.py model=deecision_tree
+export PASSWORD=YOUR_PASS
 ```
 
-Для запуска predict
+Для запуска tests
 --------
 ```
-python3 ./src/predict.py 
+
 ```
-возможные параметры:
-- path2model - путь до модели
-- path2data - путь до данных, на которых нужно сделлать предикт
-- path2predict - путь до файла, в которых необходимо сохранить результат
