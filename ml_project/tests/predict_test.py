@@ -1,9 +1,9 @@
 import os
+import pandas as pd
 from unittest import TestCase
 
-from ml_project.src.model import load_model, predict_model
 from ml_project.src.data import read_data
-import pandas as pd
+from ml_project.src.model import load_model, predict_model
 
 MODEL_PATH_DIR = "./ml_project/model/"
 MODEL_NAME = "/finalized_model.sav"

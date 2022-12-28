@@ -1,18 +1,16 @@
+import os
+import pandas as pd
 import unittest
-from unittest import TestCase, mock
 from logging import Logger
-
-from ml_project.src.data import split_feature_target, split_train_test_data
-from ml_project.src.customdataclasses import ModelParam
-from ml_project.src.model import train_model
-
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import recall_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.tree import DecisionTreeClassifier
+from unittest import TestCase, mock
 
-import pandas as pd
-import os
+from ml_project.src.customdataclasses import ModelParam
+from ml_project.src.data import split_feature_target, split_train_test_data
+from ml_project.src.model import train_model
 
 
 class TrainTest(TestCase):
