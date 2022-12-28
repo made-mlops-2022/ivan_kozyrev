@@ -1,0 +1,9 @@
+path_2_eda_file: 'data/eda/eda.html'
+
+defaults:
+  - _self_
+  - model: log_reg
+
+
+param_4_input_data:
+  target_column: 'condition'

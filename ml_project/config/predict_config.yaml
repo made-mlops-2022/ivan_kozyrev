@@ -1,0 +1,3 @@
+path_2_model: 'model/logreg/finalized_model.sav'
+path_2_data: 'data/tests/tests.csv'
+path_2_predict: 'data/predict/predict.csv'
